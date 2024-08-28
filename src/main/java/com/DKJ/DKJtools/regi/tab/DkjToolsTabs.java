@@ -1,6 +1,7 @@
 package com.DKJ.DKJtools.regi.tab;
 
 import com.DKJ.DKJtools.main.DkjTools;
+import com.DKJ.DKJtools.regi.DkjToolsItems;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -30,7 +31,7 @@ public class DkjToolsTabs {
     //modのサブのタブ
     public static final RegistryObject<CreativeModeTab> DKJTOOLS_SUB = MOD_TABS.register("dkjtools_sub", 
     ()-> {return CreativeModeTab.builder()
-        .icon(()->new ItemStack(Blocks.CHERRY_PLANKS))
+        .icon(()->new ItemStack(DkjToolsItems.TAKE_INGOT.get()))
         .title(Component.translatable("itemGroup.dkjtools_sub"))
         .withTabsBefore(DkjToolsTabs.DKJTOOLS_MAIN.getId())
         .displayItems((param,output)->{
