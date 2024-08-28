@@ -1,5 +1,14 @@
 package com.DKJ.DKJtools.item;
 
-public class TakeIngot {
+import net.minecraft.world.item.Item;
+
+public class TakeIngot extends Item {
+
+    public TakeIngot() {
+        super(new Properties()
+            .fireResistant()
+            .stacksTo(75));
+    }
+
 
 }
