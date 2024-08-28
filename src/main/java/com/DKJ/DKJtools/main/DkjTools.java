@@ -1,5 +1,6 @@
 package com.DKJ.DKJtools.main;
 
+import com.DKJ.DKJtools.regi.DkjToolsItems;
 import com.DKJ.DKJtools.regi.tab.DkjToolsTabs;
 
 import net.minecraft.world.level.block.Block;
@@ -17,6 +18,7 @@ public class DkjTools {
     //
     public DkjTools(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        DkjToolsItems.ITEMS.register(bus);
         DkjToolsTabs.MOD_TABS.register(bus);
     }
 
