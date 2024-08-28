@@ -18,7 +18,7 @@ public class DkjToolsTabs {
     //modのメインのタブ
     public static final RegistryObject<CreativeModeTab> DKJTOOLS_MAIN = MOD_TABS.register("dkjtools_main", 
         ()-> {return CreativeModeTab.builder()
-            .icon(()->new ItemStack(Blocks.CHERRY_PLANKS))
+            .icon(()->new ItemStack(DkjToolsItems.TAKE_INGOT.get()))
             .title(Component.translatable("itemGroup.dkjtools_main"))
             .displayItems((param,output)->{
                 for(Item item:DkjMain.items){
@@ -31,7 +31,7 @@ public class DkjToolsTabs {
     //modのサブのタブ
     public static final RegistryObject<CreativeModeTab> DKJTOOLS_SUB = MOD_TABS.register("dkjtools_sub", 
     ()-> {return CreativeModeTab.builder()
-        .icon(()->new ItemStack(DkjToolsItems.TAKE_INGOT.get()))
+        .icon(()->new ItemStack(Blocks.CHERRY_PLANKS))
         .title(Component.translatable("itemGroup.dkjtools_sub"))
         .withTabsBefore(DkjToolsTabs.DKJTOOLS_MAIN.getId())
         .displayItems((param,output)->{
