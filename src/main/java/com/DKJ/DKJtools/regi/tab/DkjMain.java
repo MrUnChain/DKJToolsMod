@@ -8,7 +8,7 @@ import net.minecraft.world.item.Items;
 public class DkjMain {
 
     public static final Item[] items = {
-        DkjToolsItems.TAKE_INGOT.get(),
+        DkjToolsItems.AMI_INGOT.get(),
         Items.CHERRY_PLANKS
     };
 }
