@@ -12,6 +12,6 @@ public class DkjToolsItems {
     //アイテム生成する手段の準備
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DkjTools.MOD_ID);
 
-    //竹内（仮）を生成
+    //灰長石を生成
     public static final RegistryObject<Item> AMI_INGOT = ITEMS.register("kaityouseki", Ami_Anorthite::new);
 }

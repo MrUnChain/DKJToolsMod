@@ -1,4 +1,6 @@
 {
     "itemGroup.dkjtools_main" : "DKJツール",
-    "itemGroup.dkjtools_sub" : "DKJツールサブ"
+    "itemGroup.dkjtools_sub" : "DKJツールサブ",
+
+    "item.dkjtools.kaityouseki" : "灰長石"
 }
